@@ -1,0 +1,15 @@
+{
+  "name": "calcify-web-calculator",
+  "version": "1.0.0",
+  "description": "A beautiful, elegant web calculator with keyboard support, history, and animations.",
+  "main": "frontend/index.html",
+  "scripts": {
+    "start": "npx serve frontend -l 3000",
+    "test": "node tests/calculator.test.js",
+    "lint": "echo 'No linter configured. Add ESLint if desired.'"
+  },
+  "keywords": ["calculator", "web", "html", "css", "javascript", "glassmorphism"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {}
+}

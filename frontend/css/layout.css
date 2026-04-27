@@ -1,0 +1,57 @@
+/* ============================================================
+   layout.css  –  Button grid layout & structural positioning
+   ============================================================ */
+
+/* ---------- Button Grid ---------- */
+.buttons-grid {
+  display: grid;
+  /*
+    Layout (5 rows × 4 cols):
+    Row 1: History  AC  ±   %   ÷
+    Row 2: 7        8   9   ×
+    Row 3: 4        5   6   −
+    Row 4: 1        2   3   +
+    Row 5: 0(span2) .   =
+  */
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 58px);
+  gap: 10px;
+}
+
+/* History toggle spans full row */
+.btn-history {
+  grid-column: 1 / -1;
+  height: 40px;
+}
+
+/* Zero button spans 2 columns */
+.btn-zero {
+  grid-column: span 2;
+}
+
+/* Equals button – taller feel via identical row height, still feels special via styling */
+.btn-equals {
+  /* Keep same height as siblings; styling makes it pop */
+}
+
+/* ---------- Display alignment ---------- */
+.display-panel {
+  position: relative; /* needed for ::after overlay */
+}
+
+/* ---------- App centering ---------- */
+.app-wrapper {
+  max-width: 440px;
+  margin-inline: auto;
+}
+
+/* ---------- Utility helpers ---------- */
+.sr-only {
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border: 0;
+}
