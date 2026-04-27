@@ -183,7 +183,7 @@ const SETTINGS = {
   // ...
 };
 ```
-
+PROJECT DEPLOYED ON : https://new-dynamic-calculator.netlify.app/
 ---
 
 
