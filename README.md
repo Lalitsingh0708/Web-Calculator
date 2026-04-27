@@ -186,6 +186,4 @@ const SETTINGS = {
 
 ---
 
-## 📄 License
 
-MIT © 2026
